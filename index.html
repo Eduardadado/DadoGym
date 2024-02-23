@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- MAPA -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+
+    <title>DadoGym</title>
+    <link rel="icon" href="icone.png" type="image/x-icon">
+
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+
+    <!-- MENU -->
+    <div id="secao0">
+    <div class="headerM">
+        <div class="containerM">
+            <div class="flex">
+                
+                 <nav>
+                    <ul>
+                        <li><a href="#secao0">Home</a></li>
+                        <li><a href="#secao1">Academias</a></li>
+                        <li><a href="#secao2">IMC</a></li>
+                        <li><a href="#secao3">Cadastro</a></li>
+                    </ul>
+                 </nav>
+                 <div class="btn-desafio">
+                    <a href="trabwebPag2.html" target="_blank"><button>Feed</button></a>
+                 </div>
+                </div>
+            </div>
+        </div>
+    
+    <section class="banner">
+        <h1>DESCUBRA UM <span>NOVO MUNDO</span></h1>
+    </section>
+</div>
+
+<!-- Depoimentos -->
+<div class="depoimento">
+    <video autoplay loop> 
+        <source src="production_id_4944086 (2160p).mp4" type="video/mp4">
+        Seu navegador não suporta o elemento de vídeo   
+    </video> 
+    <p><span>Bem-vindo à DadoGym</span>, a academia que transforma vidas através do poder do movimento! Há muito tempo, em uma pequena comunidade, surgiu a ideia de criar um lugar onde as pessoas pudessem se reunir, superar desafios e se tornarem a melhor versão de si mesmas. Assim nasceu a DadoGym. Nossa academia é mais do que apenas um local de treinamento; é uma comunidade que inspira, apoia e motiva seus membros a atingir seus objetivos de condicionamento físico. Com uma equipe de instrutores dedicados, uma variedade de programas de exercícios emocionantes e instalações de última geração, estamos comprometidos em ajudar você a alcançar seus sonhos de saúde e bem-estar. Faça parte do nosso time também.</p>
+</div>
+
+     <!-- ----- CARROSEL ACADEMIA -----  -->
+         
+ <section class="slider">
+    <div class="slider-content">
+        
+        <input type="radio" name="btn-radio" id="radio1">
+        <input type="radio" name="btn-radio" id="radio2">
+        <input type="radio" name="btn-radio" id="radio3">
+        <input type="radio" name="btn-radio" id="radio4">
+
+        <div class="slide-box primeiro">
+            <img class="img-desktop" src="Academia-bike.jpg" alt="" width="800px" height="500px">
+        </div>
+
+        <div class="slide-box">
+            <img class="img-desktop" src="academiajump.jpg" alt=""  width="800px" height="500px">
+        </div>
+
+        <div class="slide-box">
+            <img class="img-desktop" src="academiaalter.webp" alt=""  width="800px" height="500px">
+        </div>
+
+        <div class="slide-box">
+            <img class="img-desktop" src="academialuta.jpeg" alt=""  width="800px" height="500px">
+        </div>
+
+        <div class="nav-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+        </div>
+
+        <div class="nav-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        </div>
+    </div>
+</section>
+ 
+
+
+<!-- CADASTRO -->
+<div id="secao3">
+    <div class="caixa">
+        <div class="cadastro">
+           <img src="undraw_shopping_re_hdd9.svg" alt="foto ilustração compras">
+       </div>
+       <div class="form1">
+           <form action="#">
+               <div class="form1-header">
+                   <div class="title">
+                       <h1>Cadastre-se</h1>
+                   </div>
+                   <div class="login-button">
+                       <button><a href="#">Entrar</a></button>
+                   </div>
+               </div>
+ 
+               <div class="input1-group">
+                   <div class="input1-box">
+                       <label for="firstname">Primeiro Nome</label>
+                       <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome" required>
+                   </div>
+ 
+                   <div class="input1-box">
+                       <label for="lastname">Sobrenome</label>
+                       <input id="lastname" type="text" name="lastname" placeholder="Digite seu sobrenome" required>
+                   </div>
+                   <div class="input1-box">
+                       <label for="email">E-mail</label>
+                       <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
+                   </div>
+ 
+                   <div class="input1-box">
+                       <label for="number">Celular</label>
+                       <input id="number" type="tel" name="number" placeholder="(xx) xxxx-xxxx" required>
+                   </div>
+ 
+                   <div class="input1-box">
+                       <label for="password">Senha</label>
+                       <input id="password" type="password" name="password" placeholder="Digite sua senha" required>
+                   </div>
+ 
+ 
+                   <div class="input1-box">
+                       <label for="confirmPassword">Confirme sua Senha</label>
+                       <input id="confirmPassword" type="password" name="confirmPassword" placeholder="Digite sua senha novamente" required>
+                   </div>
+ 
+               </div>
+ 
+               <div class="gender-inputs">
+                   <div class="gender-title">
+                       <h6>Gênero</h6>
+                   </div>
+ 
+                   <div class="gender-group">
+                       <div class="gender-input">
+                           <input id="female" type="radio" name="gender">
+                           <label for="female">Feminino</label>
+                       </div>
+ 
+                       <div class="gender-input">
+                           <input id="male" type="radio" name="gender">
+                           <label for="male">Masculino</label>
+                       </div>
+ 
+                       <div class="gender-input">
+                           <input id="others" type="radio" name="gender">
+                           <label for="others">Outros</label>
+                       </div>
+ 
+                       <div class="gender-input">
+                           <input id="none" type="radio" name="gender">
+                           <label for="none">Prefiro não dizer</label>
+                       </div>
+                   </div>
+               </div>
+ 
+               <div class="continue-button">
+                   <button><a href="#">Continuar</a> </button>
+               </div>
+           </form>
+       </div>
+   </div>
+</div>  
+</div>
+
+<!-- Horario -->
+<div class="branco">
+    <h1>Junte-se a nós para o treino</h1>
+    <ul><li>Segunda à Sexta - 6h às 22h</li>
+        <li>Sábados - 8h às 13h</li>
+        <li>Domingos - 8h às 11h</li></ul>
+</div>
+
+<!--  -----CALCULADORA----- -->
+<div id="secao2">
+    <div id="container8">
+    <div class="perfil1">  
+        <h2>Calculadora de IMC</h2>
+       <div class="img">
+        <img src="ftacademia.svg" alt="foto academia">
+       </div>
+       <div class="calculadora">
+        <form class="form">
+            <h1 class="title">
+                Calculadora - IMC
+            </h1>
+            <div id="input-box">
+                <label for="weight">
+                    Peso em kg
+                </label>
+                <div class="input-field">
+                    <i class="fa-solid fa-weight-hanging"></i>
+                    <input type="number" id="weight" required>
+                    <span>
+                        kg
+                    </span>
+                </div>
+          
+        </form>
+       </div>
+       <div id="input-box">
+        <label for="height">
+            Altura em metros
+        </label>
+        <div class="input-field">
+            <i class="fa-solid fa-ruler"></i>
+            <input type="number" id="height" required>
+            <span>
+               m
+            </span>
+        </div>
+    </div>
+      
+    <button id="bcalcular"> 
+        Calcular
+    </button>
+</form>
+
+<div id="infos" class="hidden">
+    <div id="result">
+        <div id="bmi">
+            <span id="value"></span>
+        </div>
+        <div id="resultado">
+            <span>Seu IMC</span>
+        </div>
+        <div id="message">
+            <span> </span>
+    </div>
+    </div>
+</div>
+
+</div>
+    </div>
+   </div>
+</div>
+<div class="passagem">
+    <div class="text-loop">
+       <p> O IMC (Índice de Massa Corporal) é uma medida que relaciona o peso e a altura de uma pessoa. Ele é usado para avaliar se uma pessoa está com peso saudável, abaixo do peso, com sobrepeso ou obesidade. Conhecer seu IMC é importante para monitorar a saúde e identificar possíveis riscos relacionados ao peso.</p>
+      </div>
+    </div>
+
+<!-- -----MAPA----- -->
+<div id="secao1">
+    <main>
+        <h1>Encontre uma de nossas unidades mais próxima de você!</h1>
+        <div class="containerMapa">
+            <div id="mapid"></div>
+                <div class="main1">
+            <form>
+                <div class="form-group">
+                   
+                    <input type="text" id="estado" name="estado" placeholder="Digite o estado">
+                
+                </div>
+    
+                <div class="form-group">
+                    
+                    <input type="text" id="cidade" name="cidade" placeholder="Digite a cidade">
+                </div>
+                <button id='botaomapa'>Buscar</button>
+            </form>
+        </div>
+    
+        </div>
+    </div>
+    </main>
+    </div>
+
+
+
+<footer>
+    <div id="footer-content">
+        <div id="footer-contacts">
+            <h1>DadoGym</h1>
+            <p>Nos acompanhe nas redes sociais!</p>
+            <div id="footer-social-media">
+                <a href="#" class="footer-link" id="instagram">
+                    <img src="logoinsta.webp" height="50px" width="50px" alt="Logo Instagram">
+                </a>
+                <a href="#" class="footer-link" id="facebook">
+                    <img src="logofacebook.webp" height="50px" width="50px"alt="Logo Facebook">
+                </a>
+                <a href="#" class="footer-link" id="whatts">
+                    <img src="logozap.png" height="50px" width="50px" alt="Logo whatsapp">
+                </a>
+            </div>
+        </div>
+
+
+        <ul class="footer-list">
+            <li>
+                <h3>Gympass</h3>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Personal</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Treinos</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Music</a>
+            </li>
+        </ul>
+        <ul class="footer-list">
+            <li>
+                <h3>Produtos</h3>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Suplementos</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Roupas</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Acessórios</a>
+            </li>
+        </ul>
+
+        <div id="footer-subscribe">
+            <h3>Entre para o nosso time!</h3>
+            <p>Adquira uma de nossas unidades em sua cidade</p>
+            <div id="input-group">
+                <input type="email" id="email">
+                <button>
+                    <img src="logoemail.png" alt="Logo email" width="20px" height="20px">
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Acessibilidade -->
+    
+    <img id="scrollImage" src="libras.png" alt="Imagem ao Lado do Scroll Libras">
+    
+
+    <div id="footer-final">
+        <p>&#169 2023 creator  <a href="https://github.com/Eduardadado" title="Acesse o meu GitHub">Eduarda Dado<a>
+    </div>
+</footer>
+
+
+<!-- Créditos -->
+<!-- <a href="https://www.flaticon.com/br/icones-gratis/musculo" title="músculo ícones">Músculo ícones criados por Bert Flint - Flaticon</a> -->
+<script src="trabweb2.js"></script>
+</body>
+</html>

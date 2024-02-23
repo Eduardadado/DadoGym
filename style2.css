@@ -1,0 +1,252 @@
+/* Barra pesquisa */
+@import url('https://fonts.googleapis.com/css2? família= Roupa: peso@300;400 & display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+body{
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+.menu-lateral{
+    width: 96px;
+    height: 100%;
+    background-color: #101010;
+    padding: 40px 0 40px 1%;
+    box-shadow: 4px 0 0 #fa2f19;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.menu-lateral:hover{
+    width: 245px;
+}
+.menu-lateral img{
+    border-radius: 50%;
+}
+.menu-lateral h1{
+    color: #f0f0f0;
+    font-size: 13px;
+    margin: 7px;
+}
+.btn-expandir{
+    width: 100%;
+    padding-left: 3%;
+}
+.btn-expandir i{
+    color: #fff;
+    font-size: 32px;
+    cursor: pointer;
+}
+ul{
+    height: 100%;
+    list-style-type: none;
+}
+ul li.item-menu{
+    transition: .4s;
+}
+ul li.item-menu:hover{
+    background-color:  #fa2f19;
+}
+ul li.item-menu a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+ul li.item-menu a .txt-link{
+    margin-left: 40px;
+}
+ul li.item-menu a .icon i{
+    font-size: 30px;
+    margin-left: 10px;
+}
+.meio{
+    background-color: #101010;
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    float: right;
+}
+.imagem{
+    cursor: pointer;
+    margin: 20px;
+}
+.feed-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-right: 70px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.post {
+    width: 600px;
+    height: 250px;
+    margin: 10px;
+    margin-left: 140px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+.post .coment{
+    width: 575px;
+    height: 70px;
+    background-color: #f4f1f1;
+    border-radius: 15px;
+    text-align: left;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.post div{
+    display: flex;
+    align-items: center;
+}
+.post img{
+    border-radius: 50%;
+    float: left;
+    margin: 20px;
+    cursor: pointer;
+}
+.post2{
+    width: 600px;
+    height: 500px;
+    margin: 10px;
+    margin-left: 140px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+.post2 img{
+    float: left;
+    margin: 20px;
+    cursor: pointer;
+}
+.perfil{
+    border-radius: 50%;
+}
+.post2 h1{
+    float: left;
+    margin: 30px;
+    margin-left: -2px;
+    cursor: pointer;
+}
+.post3{
+    width: 600px;
+    height: 500px;
+    margin: 10px;
+    margin-left: 140px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+.post3 img{
+    float: left;
+    margin: 20px;
+    cursor: pointer;
+}
+.perfil{
+    border-radius: 50%;
+}
+.post3 div{
+    display: flex;
+    align-items: center;
+}
+.coment3{
+    text-align: justify; 
+    line-height: 1.6; 
+}
+.coment3 p{
+    margin-bottom: 20px;
+}
+.post3 .coment3{
+    width: 575px;
+    height: 570px;
+    background-color: #f4f1f1;
+    border-radius: 15px;
+    text-align: left;
+    padding: 10px;
+    
+}
+
+.post2 h3{
+    float: left;
+    margin: 30px;
+    margin-left: -2px;
+    cursor: pointer;
+}
+
+
+.post4 {
+    width: 600px;
+    height: 530px;
+    margin: 10px;
+    margin-left: 140px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+.post4 img{
+    border-radius: 50%;
+    float: left;
+    margin: 20px;
+    cursor: pointer;
+}
+.post4 h1{
+    float: left;
+    cursor: pointer;
+    margin-top: 30px;
+   
+}
+.coment{
+    width: 575px;
+    height: 40px;
+    background-color: #f4f1f1;
+    border-radius: 15px;
+    text-align: left;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.box-icon{
+    width: 100%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+.box-icon i{
+    margin-right: 5px;
+    margin-left: 5px;
+}
